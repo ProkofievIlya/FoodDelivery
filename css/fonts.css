@@ -1,42 +1,27 @@
 @font-face {
-    font-family: "CeraPro";
-    font-weight: 400;
-    src: local("CeraPro-Regular"),
-        url("../fonts/CeraPro-Regular.woff2") format("woff2"),
-        url("../fonts/CeraPro-Regular.ttf") format("truetype");
+    font-family: "Roboto";
+    font-weight: 700;
+    src: local("Roboto-Bold"),
+        url("../fonts/Roboto-Bold.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "CeraPro";
+    font-family: "Montserrat";
     font-weight: 500;
-    src: local("CeraPro-Medium"),
-        url("../fonts/CeraPro-Medium.woff2") format("woff2");
+    src: local("Montserrat-Medium"),
+        url("../fonts/Montserrat-Medium.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "CeraPro";
+    font-family: "Montserrat";
+    font-weight: 600;
+    src: local("Montserrat-SemiBold"),
+        url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Montserrat";
     font-weight: 700;
-    src: local("CeraPro-Bold"),
-        url("../fonts/CeraPro-Bold.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "CeraPro";
-    font-weight: 900;
-    src: local("CeraPro-Black"),
-        url("../fonts/CeraPro-Black.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "EncodeSansExpanded";
-    font-weight: 400;
-    src: local("EncodeSansExpanded-Regular"),
-        url("../fonts/EncodeSansExpanded-Regular.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "EncodeSansExpanded";
-    font-weight: 700;
-    src: local("EncodeSansExpanded-Bold"),
-        url("../fonts/EncodeSansExpanded-Bold.ttf") format("truetype");
+    src: local("Montserrat-Bold"),
+        url("../fonts/Montserrat-Bold.woff2") format("woff2");
 }
