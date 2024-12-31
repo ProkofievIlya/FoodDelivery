@@ -17,14 +17,19 @@
                 <a href="./index.html" class="grand__link">
                     <img width="104" height="52" src="./images/logo.svg" alt="logo">
                 </a>
-                <!-- <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
-                <label for="burger-checkbox" class="burger"></label>
+                <div class="burger__container">
+                    <div class="burger" onclick="toggleMenu()">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
                 <ul class="menu">
-                    <li class="manu__item"><a href="./index.html">Home</a></li>
-                    <li class="manu__item"><a href="#">Product</a></li>
-                    <li class="manu__item"><a href="#">Faq</a></li>
-                    <li class="manu__item"><a href="#">Contact</a></li>
-                </ul> -->
+                    <li class="menu__item"><a href="./index.html">Home</a></li>
+                    <li class="menu__item"><a href="#">Product</a></li>
+                    <li class="menu__item"><a href="#">Faq</a></li>
+                    <li class="menu__item"><a href="#">Contact</a></li>
+                </ul>
 
             </nav>
         </div>
@@ -127,6 +132,15 @@
             }
         });
         
+    </script>
+
+    <script>
+        function toggleMenu() {
+            const burger = document.querySelector('.burger');
+            const menu = document.querySelector('.menu');
+            burger.classList.toggle('active');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
     </script>
 </body>
 
