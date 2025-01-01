@@ -21,6 +21,7 @@ button {
 }
 .container nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: 0;
@@ -373,44 +374,58 @@ button {
 }
 
 .burger__container {
-  position: absolute;
-  right: 20px;
-  top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
 }
 
 .burger {
-  width: 20px;
-  height: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   cursor: pointer;
 }
 
 .burger div {
-  width: 100%;
-  height: 2px;
-  background-color: black;
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.burger.change div:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.change div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.change div:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: none;
-  position: absolute;
-  top: 60px;
-  right: 18px;
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  right: -10px;
   background-color: #FA4A0C;
-  width: 93%;
-  padding-top: 25px;
-  padding-bottom: 5px;
-  border-radius: 100px 5px;
-  border: 15px dotted #252B42;
-  z-index: 11;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.menu__list {
+  margin-top: 30px;
+  padding: 20px;
+  list-style-type: none;
 }
 
 .menu__item {
+  margin: 30px 0;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -419,35 +434,33 @@ button {
   text-align: center;
   letter-spacing: 0.1px;
   color: #FFFFFF;
-  text-align: center;
+  text-align: left;
   position: relative;
 }
 
 .menu__item a {
   text-decoration: none;
-  margin: 0;
-  display: inline-block;
-  padding: 5px;
+  color: #000000;
+  font-size: 20px;
   position: relative;
 }
 
 .menu__item a::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
+  width: 100%;
   height: 3px;
-  background-color: #252B42;
-  transition: width 0.3s;
+  background-color: #000000;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
 .menu__item a:hover::after {
-  width: 100%;
-}
-
-.burger.active + .menu {
-  display: block;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /*# sourceMappingURL=style.css.map */

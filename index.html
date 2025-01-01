@@ -11,29 +11,31 @@
 
 <body>
 
-    <header>
-        <div class="container">
-            <nav>
-                <a href="./index.html" class="grand__link">
-                    <img width="104" height="52" src="./images/logo.svg" alt="logo">
-                </a>
-                <div class="burger__container">
-                    <div class="burger" onclick="toggleMenu()">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
+<header>
+    <div class="container">
+        <nav>
+            <a href="./index.html" class="grand__link">
+                <img width="104" height="52" src="./images/logo.svg" alt="logo">
+            </a>
+            <div class="burger__container">
+                <div class="burger" id="burger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
-                <ul class="menu">
-                    <li class="menu__item"><a href="./index.html">Home</a></li>
-                    <li class="menu__item"><a href="#">Product</a></li>
-                    <li class="menu__item"><a href="#">Faq</a></li>
-                    <li class="menu__item"><a href="#">Contact</a></li>
-                </ul>
+            </div>
+        </nav>
+    </div>
 
-            </nav>
-        </div>
-    </header>
+    <div id="menu" class="menu">
+        <ul class="menu__list">
+            <li class="menu__item"><a href="./index.html">Home</a></li>
+            <li class="menu__item"><a href="#">Product</a></li>
+            <li class="menu__item"><a href="#">Faq</a></li>
+            <li class="menu__item"><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</header>
 
     <main>
         <section class="container download">
@@ -136,10 +138,16 @@
 
     <script>
         function toggleMenu() {
-            const burger = document.querySelector('.burger');
-            const menu = document.querySelector('.menu');
-            burger.classList.toggle('active');
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            var burger = document.getElementById("burger");
+
+            if (menu.style.transform === "translateX(0%)") {
+                menu.style.transform = "translateX(100%)";
+                burger.classList.remove("change");
+            } else {
+                menu.style.transform = "translateX(0%)";
+                burger.classList.add("change");
+            }
+
         }
     </script>
 </body>
