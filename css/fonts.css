@@ -25,3 +25,10 @@
     src: local("Montserrat-Bold"),
         url("../fonts/Montserrat-Bold.woff2") format("woff2");
 }
+
+@font-face {
+    font-family: "Poppins";
+    font-weight: 700;
+    src: local("Poppins-Bold"),
+        url("../fonts/Poppins-Bold.woff2") format("woff2");
+}
