@@ -191,6 +191,11 @@ button {
   padding-right: 30px;
 }
 
+.content__item__element {
+  padding: 0;
+  margin: 0;
+}
+
 .content__item h3 {
   font-family: "Montserrat";
   font-style: normal;
@@ -332,6 +337,10 @@ button {
   transition: transform 0.3s ease;
 }
 
+.full__button {
+  display: none;
+}
+
 .app__item__button button:hover {
   background: #FA4A0C;
   color: #FFFFFF;
@@ -344,6 +353,10 @@ button {
   color: #FFFFFF;
   border: 1px solid #FA4A0C;
   transform: scale(1.07);
+}
+
+.p__full__item {
+  display: none;
 }
 
 .footer__element {
@@ -384,6 +397,18 @@ button {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.footer__element .grand__link {
+  display: none;
+}
+
+.instagram {
+  display: none;
+}
+
+.Copywright {
+  display: none;
 }
 
 .burger__container {
@@ -486,15 +511,12 @@ button {
   .burger__container {
     display: none;
   }
-  .line__item {
-    display: none;
-  }
   .mobile2 {
     top: 60px;
     left: 0;
   }
   .grand__link__item {
-    margin-left: 90px;
+    margin-left: 60px;
     width: 206px;
     height: 102px;
   }
@@ -558,7 +580,7 @@ button {
   .menu {
     position: absolute;
     top: 15px;
-    left: 1%;
+    left: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -588,6 +610,152 @@ button {
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
+  }
+  .app__store, .play__store {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+  }
+  .download__item button:hover {
+    background: #FA4A0C;
+    color: #FFFFFF;
+    border: 1px solid #FA4A0C;
+  }
+  .download__item button:focus {
+    background: #FA4A0C;
+    color: #FFFFFF;
+    border: 1px solid #FA4A0C;
+  }
+  .download__item h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 250px;
+    white-space: nowrap;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    opacity: 0.8;
+  }
+  .line__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 1230px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 884px;
+    border: 3px solid #E4E4E4;
+  }
+  .content__item {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .next {
+    display: flex;
+    flex-direction: row;
+  }
+  .content__item img {
+    margin-left: 245px;
+    margin-right: 190px;
+  }
+  .content__item__element {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .next__element {
+    padding-left: 260px;
+  }
+  .next img {
+    margin-left: 0;
+  }
+  .content__item__element h3,
+  .content__item__element h2,
+  .content__item__element p {
+    padding: 0;
+    text-align: left;
+  }
+  .content__item__element h2 {
+    padding-right: 100px;
+  }
+  .content__item__element p {
+    padding-right: 180px;
+  }
+  .app__item {
+    margin-top: 1750px;
+    width: 1440px;
+    height: 516px;
+    background: url(../images/app.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .app__item h2 {
+    margin-top: 35px;
+  }
+  .p__item {
+    display: none;
+  }
+  .p__full__item {
+    margin-top: 10px;
+    display: flex;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .app__item p {
+    color: #FFFFFF;
+  }
+  .nofull__button {
+    display: none;
+  }
+  .full__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #FFFFFF;
+    margin: 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    top: 500px;
+    padding-bottom: 60px;
+  }
+  .footer__element .grand__link {
+    display: inline;
+  }
+  .linkedin {
+    display: none;
+  }
+  .instagram {
+    display: inline;
+  }
+  .noCopywright {
+    display: none;
+  }
+  .Copywright {
+    display: inline;
   }
 }
 

@@ -11,46 +11,46 @@
 
 <body>
 
-<header>
-    <div class="container">
-        <nav>
-            <a href="./index.html" class="grand__link">
-                <img class="grand__link__item" width="104" height="52" src="./images/logo.svg" alt="logo">
-            </a>
-            <div class="burger__container">
-                <div class="burger" id="burger" onclick="toggleMenu()">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="./index.html" class="grand__link">
+                    <img class="grand__link__item" width="104" height="52" src="./images/logo.svg" alt="logo">
+                </a>
+                <div class="burger__container">
+                    <div class="burger" id="burger" onclick="toggleMenu()">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </div>
+            </nav>
+        </div>
 
-    <div id="menu" class="menu">
-        <ul class="menu__list">
-            <li class="menu__item"><a href="./index.html">Home</a></li>
-            <li class="menu__item"><a href="#">Product</a></li>
-            <li class="menu__item"><a href="#">Faq</a></li>
-            <li class="menu__item"><a href="#">Contact</a></li>
-        </ul>
-    </div>
-</header>
+        <div id="menu" class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="./index.html">Home</a></li>
+                <li class="menu__item"><a href="#">Product</a></li>
+                <li class="menu__item"><a href="#">Faq</a></li>
+                <li class="menu__item"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
 
     <main>
         <section class="container download">
             <div class="download__item">
                 <div class="download__item__info">
-                <h2>Food app</h2>
-                <h1>Why stay hungry
-                    when you can order
-                    form Bella Onojie</h1>
-                <p>Download the bella onoje’s
-                    food app now on</p>
+                    <h2>Food app</h2>
+                    <h1>Why stay hungry
+                        when you can order
+                        form Bella Onojie</h1>
+                    <p>Download the bella onoje’s
+                        food app now on</p>
                 </div>
                 <div class="download__item__button">
-                <button id="button1" class="play__store">Playstore</button>
-                <button id="button2" class="app__store">App store</button>
+                    <button id="button1" class="play__store">Playstore</button>
+                    <button id="button2" class="app__store">App store</button>
                 </div>
                 <div class="mobile">
                     <img class="mobile1" src="./images/mobile1.png" alt="mobile">
@@ -63,23 +63,29 @@
 
         <section class="container content">
             <div class="content__item">
-                <h3>Create an account</h3>
-                <h2>Create/login to an existing
-                    account to get started</h2>
-                <p>An account is created with your email and a desired password</p>
+                <div class="content__item__element">
+                    <h3>Create an account</h3>
+                    <h2>Create/login to an existing
+                        account to get started</h2>
+                    <p>An account is created with your email and a desired password</p>
+                </div>
                 <img src="./images/login.png" alt="mobile">
             </div>
-            <div class="content__item">
-                <h3>Explore while shopping</h3>
-                <h2>Shop for your favorites meal as e dey hot.</h2>
-                <p>Shop for your favorite meals or drinks and enjoy while doing it.</p>
+            <div class="content__item next">
+                <div class="content__item__element next__element">
+                    <h3>Explore while shopping</h3>
+                    <h2>Shop for your favorites meal as e dey hot.</h2>
+                    <p>Shop for your favorite meals or drinks and enjoy while doing it.</p>
+                </div>
                 <img src="./images/login2.png" alt="mobile">
             </div>
             <div class="content__item">
-                <h3>Checkout</h3>
-                <h2 class="content__item__last__h2">When you done check out and get it delivered.</h2>
-                <p>When you done check out and get it
-                    delivered with ease.</p>
+                <div class="content__item__element">
+                    <h3>Checkout</h3>
+                    <h2 class="content__item__last__h2">When you done check out and get it delivered.</h2>
+                    <p>When you done check out and get it
+                        delivered with ease.</p>
+                </div>
                 <img src="./images/login3.png" alt="mobile">
             </div>
         </section>
@@ -88,30 +94,38 @@
             <div class="app__item">
                 <h2>Download the
                     app now.</h2>
-                <p>Most calendars are
+                <p class="p__item">Most calendars are
                     designed for teams.</p>
+                <p class="p__full__item">Available on your favorite store. Start your premium experience now</p>
                 <div class="app__item__button">
-                    <button class="buy__now">Buy now</button>
-                    <button class="try__for__free">Try for free</button>
+                    <button class="buy__now nofull__button">Buy now</button>
+                    <button class="try__for__free nofull__button">Try for free</button>
+                    <button class="buy__now full__button">Playstore</button>
+                    <button class="try__for__free full__button">App store</button>
                 </div>
             </div>
         </section>
-        
+
     </main>
     <footer class="container footer__element">
+        <a href="./index.html" class="grand__link">
+            <img class="grand__link__item" width="104" height="52" src="./images/logo.svg" alt="logo">
+        </a>
         <div class="footer__item">
             <a href="https://twitter.com/"><img src="./images/twitter.svg" alt="twitter"></a>
             <a href="https://facebook.com/"><img src="./images/facebook.svg" alt="facebook"></a>
-            <a href="https://linkedin.com/"><img src="./images/linkedin.svg" alt="linkedin"></a>
+            <a class="linkedin" href="https://linkedin.com/"><img src="./images/linkedin.svg" alt="linkedin"></a>
+            <a class="instagram" href="https://instagram.com/"><img src="./images/instagram.svg" alt="instagram"></a>
         </div>
-        <p>Just type what's on your mind and we'll</p>
+        <p class="noCopywright">Just type what's on your mind and we'll</p>
+        <p class="Copywright">Copywright 2025 Bella Onojie.com</p>
     </footer>
 
     <script>
         window.onload = function () {
             document.getElementById('button1').focus();
-        };       
-         
+        };
+
         const button1 = document.getElementById('button1');
         const button2 = document.getElementById('button2');
         let currentFocusButton = null;
@@ -137,7 +151,7 @@
                 button2.focus();
             }
         });
-        
+
     </script>
 
     <script>
@@ -154,6 +168,7 @@
 
         }
     </script>
+
 </body>
 
 </html>
